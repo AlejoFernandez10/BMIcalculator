@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import './globals.css'
+import Navbar from '@/components/Navbar'
 
 
 
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className='relative'>
+        <Navbar />
         {children}
 
         <footer className='absolute bottom-2 w-full text-center font-semibold '>Developed by <Link href={'https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit'} target='_blank' className=' underline'>Alejo Fernandez </Link> </footer>
